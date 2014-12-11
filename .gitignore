@@ -1,0 +1,17 @@
+/packages
+
+/LogTester/obj
+
+/LogTester/bin
+
+/LogToApi/obj
+
+/LogToApi/bin
+/.nuget
+/packages.config
+/LogToApi.v11.suo
+/Remotelog.Net.Client/obj
+/Remotelog.Net.Client/bin
+/Remotelog.Net.Client.ConsoleTest/obj
+/Remotelog.Net.Client.ConsoleTest/bin
+/_deploy
