@@ -34,16 +34,13 @@ namespace Remotelog.Net.Client
                 ThreadStart ths = (delegate()
                 {
                     WebClient client = new WebClient();
-                    string url = string.Format("{0}?log={1}&text={2}&type={3}&person={4}",
-                        config.Endpoint,
+                    string url = string.Format("/write?log={0}&text={1}&type={2}&person={3}",
                         config.Name,
                         text,
                         type,
                         person);
-
-                    Uri uri = new Uri(url);
+                    Uri uri = new Uri(config.Endpoint.TrimEnd('/') + url);
                     client.DownloadString(uri);
-                    
                 });
 
                 ths.Invoke();

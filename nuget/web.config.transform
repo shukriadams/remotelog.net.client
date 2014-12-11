@@ -1,0 +1,9 @@
+<configuration>
+
+  <configSections>
+    <section name="remotelogClient" type="Remotelog.Net.Client.LogConfigHandler, Remotelog.Net.Client" />
+  </configSections>
+
+  <remotelogClient name="remote log name" endpoint="http://yourdomain.com/api/log" />
+
+</configuration>
